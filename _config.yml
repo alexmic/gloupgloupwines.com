@@ -1,0 +1,7 @@
+name: Gloup Gloup Wines
+description: Fresh takes on local grapes. First label &mdash; Paliatsos, 100% Maratheftiko, limited production, unlimited vibes.
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown

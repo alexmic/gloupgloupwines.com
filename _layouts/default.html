@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+
+    <!-- IBM Plex Sans font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['IBM Plex Sans', 'apple-system', 'sans-serif'],
+            },
+            colors: {
+              primary: '#222222'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-sans bg-[#F8EFE1]">
+    {{ content }}
+  </body>
+</html>
